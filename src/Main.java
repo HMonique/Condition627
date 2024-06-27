@@ -12,10 +12,10 @@ public class Main {
             System.out.println("Name starts with A");
         } else {
             System.out.println("Name does not start with A");
-            System.out.println(escape());
+            System.out.println(isCapital( "A"));
         }
     }
-    static int mathOne() {
+    static int mathOne(){
 // **Wrapper Classes**: In Java, wrapper classes turn primitive date types (int, char, double, etc.) into objects.
 
 // **Autoboxing**: The automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes.
@@ -32,6 +32,15 @@ public class Main {
     }
 
     static String escape() {
-        return "Monique \nHarris";
+        return "\"Monique\" \nHarris";
+    }
+    static boolean isCapital(String c){
+        if(c == c.toUpperCase() ){
+
+           return true;
+        }else{
+            return false;
+        }
+
     }
 }
