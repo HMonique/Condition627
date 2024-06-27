@@ -7,14 +7,30 @@ public class Main {
         String name = "Zbdoul";
 
         System.out.println(name.charAt(0));
-
-        if (name.charAt(0) == 'A') {
+// Ternary
+        if(name.charAt(0) == 'A' ? true: false) {
             System.out.println("Name starts with A");
-        } else {
+        }
+
+        else {
             System.out.println("Name does not start with A");
-            System.out.println(isCapital( "A"));
+//            System.out.println(isCapital( "A"));
+//            stringOne();
+//            printStatements();
+//            System.out.println(WhatDayQM("Monday"));
+              loops(12);
         }
     }
+
+    static void loops(int num)
+    {
+        for(int i = 0; i<num ; i++){
+            System.out.println("Number in the for loop: "+i);
+
+        }
+    }
+
+
     static int mathOne(){
 // **Wrapper Classes**: In Java, wrapper classes turn primitive date types (int, char, double, etc.) into objects.
 
@@ -34,11 +50,11 @@ public class Main {
     static void stringOne(){
         //Create and use Strings
 
-        String name = "Francisco";
+        String name = " Francisco ";
 
         String newStr = new String("Put it in the Bag !");
 
-
+        System.out.println(newStr.replace("t", "").toUpperCase().replace(" ", ""));
     }
 
     static String escape() {
@@ -53,4 +69,44 @@ public class Main {
         }
 
     }
+
+    static void printStatements(){
+
+        System.out.println("Hello World !");
+        System.out.print("Hello");
+        System.out.printf(" AGE: %d, NAME: %s" ,30,"Steven");
+    }
+
+    static double mathClass(){
+
+        return Math.sqrt(16);
+    }
+
+    static String WhatDayQM(String s){
+
+        switch(s){
+            case "Monday":
+                System.out.println("It is Monday");
+            break;
+            case "Tuesday":
+                System.out.println("It is Tuesday");
+                break;
+            case "Wednesday":
+                System.out.println("It is Wednesday");
+                break;
+            case "Thursday":
+                System.out.println("It is Thursday");
+                break;
+            case "Friday":
+                System.out.println("It is Friday");
+                break;
+                case "Sunday":
+                System.out.println("It is Sunday");
+                break;
+
+        }
+
+        return s;
+    }
+
 }
