@@ -31,6 +31,16 @@ public class Main {
 
     }
 
+    static void stringOne(){
+        //Create and use Strings
+
+        String name = "Francisco";
+
+        String newStr = new String("Put it in the Bag !");
+
+
+    }
+
     static String escape() {
         return "\"Monique\" \nHarris";
     }
