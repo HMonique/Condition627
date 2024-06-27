@@ -24,9 +24,13 @@ public class Main {
 
     static void loops(int num)
     {
-        for(int i = 0; i<num ; i++){
-            System.out.println("Number in the for loop: "+i);
+//        for(int i = 0; i<num ; i++){
+//            System.out.println("Number in the for loop: "+i);
+//    }
 
+        while(num > 5){
+
+            System.out.println("This is the Number : "+ num);
         }
     }
 
