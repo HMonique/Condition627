@@ -22,16 +22,25 @@ public class Main {
         }
     }
 
-    static void loops(int num)
-    {
+    static void loops(int num){
+
 //        for(int i = 0; i<num ; i++){
 //            System.out.println("Number in the for loop: "+i);
 //    }
 
-        while(num > 5){
+//        while(num > 5){
+//            System.out.println("This is the Number : "+ num);
+//
+//            num--;
 
-            System.out.println("This is the Number : "+ num);
-        }
+
+//        }
+        do {
+
+            System.out.println("This is a do while loop !" + num);
+            num--;
+        }while(num > 5);
+
     }
 
 
